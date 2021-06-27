@@ -5,64 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
 
-  We are creatives
+  <header>
+    <nav>
+      <a href="#" class="logo">sunnyside</a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li class="contact"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  Transform your brand
+    <h1>We are creatives</h1>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    <img class="arrow" src="images/icon-arrow-down.svg" alt="" srcset="">
 
-  Learn more
+  </header>
 
-  Stand out to the right audience
+  <div class="content-container">
+    <div class="card">
+      <div class="card-textbox">
+        <h3>Transform your brand</h3>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        <p>We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
 
-  Learn more
+        <a href="#" class="transform">Learn more</a>
+      </div>
+    </div>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+    <div class="card">
+      <img src="images/desktop/image-transform.jpg" alt="">
+    </div>
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+    <div class="card">
+      <img src="images/desktop/image-stand-out.jpg" alt="">
+    </div>
+    
+    <div class="card">
+      <div class="card-textbox">
+        <h3>Stand out to the right audience</h3>
 
-  Client testimonials
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+        
+        <a href="#" class="audience">Learn more</a>
+      </div>
+    </div>
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
+    <div class="graphic-card">
+      <div class="lower-textbox">
+        <h3>Graphic Design</h3>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+    </div>
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+    <div class="photo-card">
+      <div class="lower-textbox">
+        <h3>Photography</h3>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+  </div>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+  <div class="testimonial-container">
+    <h2>Client testimonials</h2>
 
-  About
-  Services
-  Projects
-  Contact
+    <div class="card-container">
+      <div class="testimonial-card">
+        <img src="images/image-emily.jpg" alt="" class="testimonial-image">
+        <p class="testimonial-text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p class="testimonial-name">Emily R.</p>
+        <p class="testimonial-position">Marketing Director</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="images/image-thomas.jpg" alt="" class="testimonial-image">
+        <p class="testimonial-text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p class="testimonial-name">Thomas S.</p>
+        <p class="testimonial-position">Chief Operating Officer</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="images/image-jennie.jpg" alt="" class="testimonial-image">
+        <p class="testimonial-text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p class="testimonial-name">Jennie F.</p>
+        <p class="testimonial-position">Business Owner</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+    <img src="images/desktop/image-gallery-orange.jpg" alt="">
+    <img src="images/desktop/image-gallery-cone.jpg" alt="">
+    <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+  </div>
+
+  <footer>
+
+    <h3 class="footer-headline">sunnyside</h3>
+
+    <div class="footer-container">
+      <a href="#" class="footer-links">About</a>
+      <a href="#" class="footer-links">Services</a>
+      <a href="#" class="footer-links">Projects</a>
+    </div>
+
+    <div class="social-media-container">
+      <a href="#" class="social-media"><i class="fab fa-facebook-square"></i></a>
+      <a href="#" class="social-media"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-media"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-media"><i class="fab fa-pinterest"></i></a>
+    </div>
+
+  </footer>
+  
+
+  
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/fl97" target="_blank">Florian Lutz</a>.
   </div>
 </body>
 </html>
