@@ -42,20 +42,27 @@ nav {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    cursor: pointer;
 }
 
 .nav-links ul li:hover {
     border-radius: 25px;
-    background-color: rgba(240, 248, 255, 0.466);
+    background-color: rgba(255, 255, 255, 0.37);
 }
 
-.nav-links ul li a {
-    color: #fff;
+.nav-item {
     text-decoration: none;
+    color: #fff;
 }
 
-.contact a {
-    color: black;
+li:last-child {
+    color: hsl(198, 62%, 26%);
+    background-color: white;
+    border-radius: 25px;
+}
+
+li:last-child:hover {
+    color: white;
 }
 
 header h1 {
