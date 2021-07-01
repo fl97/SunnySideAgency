@@ -92,6 +92,8 @@ header h1 {
         ". .";
 }
 
+
+
 .card {
     height: 75vh;
     display: flex;
@@ -312,4 +314,101 @@ footer {
 
 .social-media i:hover {
     color: white;
+}
+
+
+
+
+/* Mobile Design */
+
+
+@media (max-width: 375px) {
+    .content-container {
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px;
+        grid-auto-flow: dense;
+        grid-template-areas: 
+            "."
+            "."
+            "."
+            "."
+            "."
+            ".";
+    }
+
+    .egg {
+        grid-row-start: 1;
+    }
+
+    .card-textbox {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .card-container {
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px;
+        grid-auto-flow: dense;
+        grid-template-areas: 
+            "."
+            "."
+            ".";
+    }
+
+    .testimonial-card {
+        padding: 0;
+    }
+
+    .testimonial-image {
+        margin-bottom: 10px;
+    }
+
+    .testimonial-text {
+        margin-bottom: 10px;
+    }
+
+    .testimonial-position {
+        margin-bottom: 50px;
+    }
+
+    .image-container {
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px; 
+        grid-template-areas: 
+            ". ."
+            ". .";
+    }
+
+    .milk-image {
+        content: url('images/mobile/image-gallery-milkbottles.jpg');
+    }
+
+    .orange-image {
+        content: url('images/mobile/image-gallery-orange.jpg');
+    }
+
+    .cone-image {
+        content: url('images/mobile/image-gallery-cone.jpg');
+    }
+
+    .sugar-image {
+        content: url('images/mobile/image-gallery-sugar-cubes.jpg');
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    .social-media-container {
+        width: 80%;
+    }
 }
