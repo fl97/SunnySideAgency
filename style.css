@@ -15,58 +15,50 @@ header {
     position: relative;
 }
 
-nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
+.navbar {
+    padding: 20px 50px 0 50px;
 }
 
-.logo {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:last-child {
+    color: hsl(198, 62%, 26%);
+}
+
+.navbar-dark .navbar-nav .nav-link:last-child:hover {
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
     font-size: 34px;
 }
 
-.nav-links {
-    flex: 1;
-    text-align: right;
+.navbar-brand:hover {
+    color: white;
 }
 
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-    cursor: pointer;
-}
-
-.nav-links ul .icon {
-    display: none;
-}
-
-.nav-links ul li:hover {
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.37);
+.navbar-nav {
+    margin-left: auto;
 }
 
 .nav-item {
-    text-decoration: none;
-    color: #fff;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 18px;
+    margin: 0 10px;
 }
 
-li:nth-child(4) {
+.nav-item:last-child {
     color: hsl(198, 62%, 26%);
-    background-color: white;
     border-radius: 25px;
+    background-color: white;
 }
 
-li:nth-child(4):hover {
-    color: white;
+.nav-item:last-child:hover{
+    background-color: rgba(255, 255, 255, 0.363);
 }
 
 header h1 {
@@ -76,7 +68,7 @@ header h1 {
     font-family: 'Fraunces', sans-serif;
     font-weight: 900;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .arrow {
@@ -95,8 +87,6 @@ header h1 {
         ". ."
         ". .";
 }
-
-
 
 .card {
     height: 75vh;
@@ -326,11 +316,23 @@ footer {
 /* Mobile Design */
 
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
 
     header {
         background-image: url('images/mobile/image-header.jpg');
         min-height: 65vh;
+    }
+
+    .navbar-toggler {
+        outline: none;
+    }
+
+    .navbar-toggler-icon {
+        color: white;
+    }
+
+    .navbar-collapse .collapse .show {
+        background-color: white;
     }
     
     header h1 {
